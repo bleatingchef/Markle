@@ -1,0 +1,31 @@
+.logo-slider {
+  overflow: hidden;
+  width: 100%; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap; /* Ensure the logos stay in a single line */
+}
+
+.logo-list {
+  display: inline-flex;
+  animation: slide 20s linear infinite;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px; /* Add horizontal spacing between logos */
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

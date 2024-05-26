@@ -1,0 +1,23 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .stylish-m {
+      fill: none;
+      stroke: #000;
+      stroke-width: 4;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      animation: draw 2s infinite alternate;
+    }
+    @keyframes draw {
+      0% {
+        stroke-dasharray: 0, 200;
+        stroke: #000;
+      }
+      100% {
+        stroke-dasharray: 200, 0;
+        stroke: #f00;
+      }
+    }
+  </style>
+  <path class="stylish-m" d="M 50 150 L 75 50 L 100 100 L 125 50 L 150 150"/>
+</svg>
