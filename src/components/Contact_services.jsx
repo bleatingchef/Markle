@@ -1,16 +1,8 @@
 import { useState } from "react";
 import Section from "./Section";
-import Heading from "./Heading";
-import { service1, service2, service3, check, map } from "../assets"; // Import the map image
-import { brainwaveServices, brainwaveServicesIcons, contactservices } from "../constants";
-import {
-    PhotoChatMessage,
-    Gradient,
-    VideoBar,
-    VideoChatMessage,
-} from "./design/Services";
-
-import Generating from "./Generating";
+import { service1, service2, service3, check, map } from "../assets";
+import { brainwaveServices } from "../constants";
+import { Gradient } from "./design/Services";
 
 const Contact_services = () => {
     const [formData, setFormData] = useState({
@@ -47,21 +39,17 @@ const Contact_services = () => {
     return (
         <Section id="how-to-use">
             <div className="container">
-
-
                 <div className="relative">
-
-
                     <div className="relative z-1 grid gap-5 lg:grid-cols-2">
-                        <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
-                            <div className="absolute inset-0 p-8 bg-gradient-to-r from-blue-900 to-purple-900 rounded-3xl overflow-hidden bg-opacity-50 backdrop-filter backdrop-blur-lg">
-                                <form className="space-y-6" onSubmit={handleSubmit}>
+                        <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden shadow-lg">
+                            <div className="absolute inset-0 p-8 bg-gradient-to-r from-blue-900 to-purple-900 rounded-3xl overflow-hidden bg-opacity-60 backdrop-filter backdrop-blur-lg">
+                                <form className="space-y-6 flex flex-col" onSubmit={handleSubmit}>
                                     <div className="mb-4">
                                         <label className="block text-white text-sm font-bold mb-2" htmlFor="name">
                                             Name
                                         </label>
                                         <input
-                                            className={`shadow appearance-none border border-gray-700 rounded-lg w-full py-2 px-3 bg-gray-800 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.name ? 'border-red-500' : ''}`}
+                                            className={`shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-800 bg-opacity-50 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.name ? 'border-red-500' : 'border-gray-700'}`}
                                             id="name"
                                             type="text"
                                             placeholder="Name"
@@ -75,7 +63,7 @@ const Contact_services = () => {
                                             Ph. Number
                                         </label>
                                         <input
-                                            className={`shadow appearance-none border border-gray-700 rounded-lg w-full py-2 px-3 bg-gray-800 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.phone ? 'border-red-500' : ''}`}
+                                            className={`shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-800 bg-opacity-50 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.phone ? 'border-red-500' : 'border-gray-700'}`}
                                             id="phone"
                                             type="text"
                                             placeholder="Ph. Number"
@@ -89,7 +77,7 @@ const Contact_services = () => {
                                             Mail
                                         </label>
                                         <input
-                                            className={`shadow appearance-none border border-gray-700 rounded-lg w-full py-2 px-3 bg-gray-800 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.mail ? 'border-red-500' : ''}`}
+                                            className={`shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-800 bg-opacity-50 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.mail ? 'border-red-500' : 'border-gray-700'}`}
                                             id="mail"
                                             type="email"
                                             placeholder="Mail"
@@ -103,7 +91,7 @@ const Contact_services = () => {
                                             Select Services
                                         </label>
                                         <select
-                                            className={`shadow appearance-none border border-gray-700 rounded-lg w-full py-2 px-3 bg-gray-800 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.services ? 'border-red-500' : ''}`}
+                                            className={`shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-800 bg-opacity-50 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.services ? 'border-red-500' : 'border-gray-700'}`}
                                             id="services"
                                             value={formData.services}
                                             onChange={handleChange}
@@ -122,7 +110,7 @@ const Contact_services = () => {
                                             Leave a comment here
                                         </label>
                                         <textarea
-                                            className={`shadow appearance-none border border-gray-700 rounded-lg w-full py-2 px-3 bg-gray-800 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.comment ? 'border-red-500' : ''}`}
+                                            className={`shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-800 bg-opacity-50 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.comment ? 'border-red-500' : 'border-gray-700'}`}
                                             id="comment"
                                             placeholder="Leave a comment here"
                                             value={formData.comment}
@@ -143,11 +131,8 @@ const Contact_services = () => {
                             </div>
                         </div>
 
-                        <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem] bg-gradient-to-r from-blue-900 to-purple-900 ">
-                            <div className="py-12 px-4 xl:px-8">
-
-                            </div>
-
+                        <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem] bg-gradient-to-r from-blue-900 to-purple-900">
+                            <div className="py-12 px-4 xl:px-8"></div>
                             <div className="relative h-[20rem] bg-gray-900 rounded-xl overflow-hidden md:h-[25rem] mb-4 p-6 text-white font-sans opacity-70">
                                 <div className="absolute inset-0 flex flex-col justify-center items-center p-8">
                                     <h1 className="text-5xl font-bold mb-4 text-center">India</h1>
@@ -155,14 +140,12 @@ const Contact_services = () => {
                                         A-52, Som Bazar Chowk, Vikas Nagar<br />
                                         Uttam Nagar, New Delhi-59 (INDIA)
                                     </h3>
-                                    < p className="text-xl text-center mt-5">
+                                    <p className="text-xl text-center mt-5">
                                         info@markletechandmedia.com<br />
                                         markletechandmedia@gmail.com<br />
                                         +91-798-233-2070 / +91-767-810-2159
-                                    </p >
-
+                                    </p>
                                 </div>
-
                             </div>
                             <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                                 <img
@@ -177,7 +160,6 @@ const Contact_services = () => {
                     </div>
 
                     <div className="relative h-[30rem] bg-white rounded-xl overflow-hidden mb-4 p-6 text-black font-sans opacity-70 mt-10">
-                        {/* <img src={newImage} className="w-full h-full object-cover" alt="New Content" /> */}
                         <div className="absolute inset-0 flex flex-col justify-center items-center p-8">
                             <h1 className="text-4xl font-bold mb-4 text-center">Elevate Your Digital Footprint: Grow Your Online Presence!</h1>
                             <p className="text-xl text-center mb-6">Still waiting for a Brand Building, Website & Digital marketing agency for your Business? Call Now!! And get the best website development & Digital Marketing & Video Production services for your business.</p>
