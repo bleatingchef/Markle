@@ -129,6 +129,18 @@ export const brainwaveServices = [
   "On Demand Apps",
 ];
 
+export const contactservices = [
+  // "LMS",
+  // "Procurement Software",
+  // "ERP Software",
+  // "Asset Management System",
+  // "HR Solution",
+  // "Travel Booking Engine",
+  // "Warehouse Management",
+  // "Supply Chain Management",
+  // "On Demand Apps",
+];
+
 export const productServices = [
   "Learn about our products for FREE with an elaborate demo! Don't know if our products are for you or not? Don't worry. We also provide FREE consultation.",
   "Enjoy 3 months of FREE maintenance and guidance after purchase!"

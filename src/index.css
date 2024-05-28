@@ -12,6 +12,13 @@
   --font-grotesk: "Space Grotesk", sans-serif;
   color-scheme: dark;
 }
+::-webkit-scrollbar{
+  background: black;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, 0.475);
+}
 
 * {
   scroll-behavior: smooth

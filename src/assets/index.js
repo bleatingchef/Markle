@@ -42,6 +42,7 @@ import service3 from "./services/service-3.png";
 import service4 from "./services/sd1.webp";
 import service5 from "./services/sd2.webp";
 import service6 from "./services/productbg.webp"
+import map from "./services/map.webp"
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -195,4 +196,5 @@ export {
   smm,
   dm,
   cpapp,
+  map,
 };
