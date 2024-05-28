@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Portfolio_com from "./pages/Portfolio_com";
 import Package_com from "./pages/Package_com";
 // import About_com from "./pages/About_com";
+import Contact_com from "./pages/Contact_com";
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/about" element={<About/>}/>
         <Route path="/portfolio" element={<Portfolio_com/>}/>
         <Route path="/packages" element={<Package_com/>}/>
+        <Route path="/contact" element={<Contact_com/>}/>
         {/* <Route path="about" element={<About_com/>}/>  */}
       </Routes>
       <ButtonGradient />

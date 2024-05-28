@@ -390,6 +390,57 @@ export const benefits = [
   },
 ];
 
+export const emp = [
+  {
+    id: "0",
+    title: "Aditya Anand Thakur",
+    text: "Designing, building, and implementing mobile apps to accelerate your sales as well as business growth.",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: mobapp,
+  },
+  {
+    id: "1",
+    title: "Himashu behera",
+    text: "Web Developer",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: dm,
+  },
+  {
+    id: "2",
+    title: "Durgesh Anand Thakur",
+    text: "Web Developer",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    iconUrl: benefitIcon3,
+    imageUrl: cpapp,
+  },
+  {
+    id: "3",
+    title: "fsvsfvfsv",
+    text: "developerelkfkfdkklsdjflksjflkjsdlkf",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: mobapp,
+  },
+  {
+    id: "4",
+    title: "Dsdjhcvsdvjchn",
+    text: "cdhacvdchvlsdflksmdflksjdflkjsdlkfjsl",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: dm,
+  },
+  {
+    id: "5",
+    title: "cvhdicak",
+    text: "Designing, building, and implementing mobile apps to accelerate your sales as well as business growth.",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    iconUrl: benefitIcon3,
+    imageUrl: cpapp,
+  },
+];
+
 
 export const productbenefits = [
   {
