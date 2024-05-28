@@ -61,13 +61,13 @@ const About_hero = () => {
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           
           <div className="absolute top-80">
-            <img
+            {/* <img
               src={heroBackground}
               className="w-full  opacity-20 "
               width={1440}
               height={1800}
               alt="hero"
-            />
+            /> */}
           </div>
 
           
