@@ -5,6 +5,13 @@ import {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
+  lms,
+  pms,
+  asset,
+  hr,
+  wm,
+  erp,
+  scm,
   chromecast,
   disc02,
   discord,
@@ -469,7 +476,7 @@ export const productbenefits = [
     text: "In the last two years, we have experienced many changes in the way we used...",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    imageUrl: lms,
     light: true,
   },
   {
@@ -478,7 +485,7 @@ export const productbenefits = [
     text: "Procurement software plays a very important role in modern technology world as it helps in...",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    imageUrl: pms,
   },
   {
     id: "3",
@@ -486,7 +493,7 @@ export const productbenefits = [
     text: "The asset management is a benefit in managing your client's investment portfolio or holdings of...",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    imageUrl: asset,
   },
   {
     id: "4",
@@ -494,7 +501,7 @@ export const productbenefits = [
     text: "Human Resource management nowadays is done everywhere through the use of technology and is known...",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    imageUrl: hr,
     light: true,
   },
   {
@@ -503,7 +510,7 @@ export const productbenefits = [
     text: "Businesses in Digital Transformation landscape requires applications to manage complex day to day operations involving...",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    imageUrl: wm,
   },
   {
     id: "6",
@@ -511,7 +518,7 @@ export const productbenefits = [
     text: "The asset management is a benefit in managing your client's investment portfolio or holdings of...",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    imageUrl: erp,
   },
   {
     id: "7",
@@ -519,7 +526,7 @@ export const productbenefits = [
     text: "Human Resource management nowadays is done everywhere through the use of technology and is known...",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    imageUrl: scm,
   },
 ];
 

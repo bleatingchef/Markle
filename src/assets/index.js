@@ -72,18 +72,27 @@ import benefitIcon1 from "./benefits/icon-1.svg";
 import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
-import benefitImage2 from "./benefits/image-2.png";
- import mobapp from "./benefits/mobapp.webp"
- import cpapp from "./benefits/cpapp.jpg"
+import benefitImage2 from "./benefits/tms.png";
+import lms from "./benefits/lms.png"
+import pms from "./benefits/pms.png"
+import asset from "./benefits/asset.png"
+import hr from "./benefits/hr.png"
+import wm from "./benefits/wm.png"
+import erp from "./benefits/erp.png"
+import scm from "./benefits/scm.png"
+
+
+ import mobapp from "./benefits/mobapp.png"
+ import cpapp from "./benefits/cpapp.png"
  import dm from "./benefits/dm.png"
- import arvr from "./benefits/arvr.webp"
- import ai from "./benefits/ai.webp"
- import sd from "./benefits/sd.webp"
- import webapp from "./benefits/webapp.webp"
- import it from "./benefits/it.webp"
- import payper from "./benefits/payper.webp"
- import seo from "./benefits/seo.webp"
- import smm from "./benefits/smm.webp"
+ import arvr from "./benefits/arvr.png"
+ import ai from "./benefits/ai.png"
+ import sd from "./benefits/sd.png"
+ import webapp from "./benefits/webapp.png"
+ import it from "./benefits/it.png"
+ import payper from "./benefits/payper.png"
+ import seo from "./benefits/seo.png"
+ import smm from "./benefits/smm.png"
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
@@ -165,6 +174,13 @@ export {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
+  lms,
+  pms,
+  asset,
+  hr,
+  wm,
+  erp,
+  scm,
   discordBlack,
   facebook,
   instagram,

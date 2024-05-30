@@ -97,3 +97,26 @@
   width: 0px;
   background:transparent;
 }
+
+.contactFormPage input{
+  padding: 20px 10px;
+}
+.contactFormPage select{
+  padding: 20px 10px;
+}
+.contactFormPage textarea{
+  padding: 10px 10px;
+  height: 30vh;
+}
+@media screen and (max-width:992px) {
+  .contactFormPage input{
+    padding: 10px 10px;
+  }
+  .contactFormPage select{
+    padding: 10px 10px;
+  }
+  .contactFormPage textarea{
+    padding: 10px 10px;
+    height: 13vh;
+  }
+}
