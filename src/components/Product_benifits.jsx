@@ -45,10 +45,10 @@ const Product_Benefits = () => {
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
-                      width={380}
-                      height={362}
+                      width={300}
+                      height={280}
                       alt={item.title}
-                      className="w-full h-full object-cover"
+                      className=" ml-10 mt-2 object-cover"
                     />
                   )}
                 </div>
