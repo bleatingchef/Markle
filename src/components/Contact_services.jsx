@@ -134,12 +134,12 @@ const Contact_services = () => {
                         <div className="py-12 px-4 xl:px-8"></div>
                         <div className="relative h-[20rem] bg-gray-900 rounded-xl overflow-hidden md:h-[25rem] mb-4 p-6 text-white font-sans opacity-70">
                             <div className="absolute inset-0 flex flex-col justify-center items-center p-8">
-                                <h1 className="text-5xl font-bold mb-4 text-center">India</h1>
-                                <h3 className="text-2xl mb-4 text-center mt-5">
+                                <h1 className="text-4xl font-bold mb-1 text-center">India</h1>
+                                <h3 className="text-2xl mb-4 text-center">
                                     A-52, Som Bazar Chowk, Vikas Nagar<br />
                                     Uttam Nagar, New Delhi-59 (INDIA)
                                 </h3>
-                                <p className="text-xl text-center mt-5">
+                                <p className="text-xl text-center">
                                     info@markletechandmedia.com<br />
                                     markletechandmedia@gmail.com<br />
                                     +91-798-233-2070 / +91-767-810-2159
