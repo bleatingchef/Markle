@@ -130,16 +130,16 @@ const Contact_services = () => {
                         </div>
                     </div>
 
-                    <div className="p-4 bg-gray-900 rounded-3xl overflow-hidden lg:min-h-[46rem] bg-gradient-to-br from-purple-950 to-grey-800">
-                        <div className="py-12 px-4 xl:px-8"></div>
-                        <div className="relative h-[20rem] bg-gray-900 rounded-xl overflow-hidden md:h-[25rem] mb-4 p-6 text-white font-sans opacity-70">
+                    <div className="p-4 bg-gray-900 rounded-3xl overflow-hidden bg-gradient-to-br from-purple-950 to-gray-800">
+                        <div className="py-6 md:py-12 px-4 xl:px-8"></div>
+                        <div className="relative h-[20rem] bg-gray-900 rounded-xl overflow-hidden md:h-[25rem] mb-4 p-4 md:p-6 text-white font-sans opacity-70">
                             <div className="absolute inset-0 flex flex-col justify-center items-center p-8">
-                                <h1 className="text-5xl font-bold mb-4 text-center">India</h1>
-                                <h3 className="text-2xl mb-4 text-center mt-5">
+                                <h1 className="text-3xl mt-2 font-bold text-center">India</h1>
+                                <h3 className="text-2xl text-center mt-5">
                                     A-52, Som Bazar Chowk, Vikas Nagar<br />
                                     Uttam Nagar, New Delhi-59 (INDIA)
                                 </h3>
-                                <p className="text-xl text-center mt-5">
+                                <p className="text-xl text-center mt-2">
                                     info@markletechandmedia.com<br />
                                     markletechandmedia@gmail.com<br />
                                     +91-798-233-2070 / +91-767-810-2159
@@ -158,10 +158,10 @@ const Contact_services = () => {
                     </div>
                 </div>
 
-                <div className="relative h-[30rem] bg-gray-900 rounded-xl overflow-hidden mb-4 p-6 text-white font-sans opacity-70 mt-10 bg-gradient-to-br from-purple-950 to-grey-800">
-                    <div className="absolute inset-0 flex flex-col justify-center items-center p-8">
-                        <h1 className="text-4xl font-bold mb-4 text-center">Elevate Your Digital Footprint: Grow Your Online Presence!</h1>
-                        <p className="text-xl text-center mb-6">Still waiting for a Brand Building, Website & Digital marketing agency for your Business? Call Now!! And get the best website development & Digital Marketing & Video Production services for your business.</p>
+                <div className="relative h-auto md:h-[20rem] bg-gray-900 rounded-xl overflow-hidden mb-4 p-4 md:p-6 text-white font-sans opacity-70 mt-6 md:mt-10 bg-gradient-to-br from-purple-950 to-gray-800">
+                    <div className="flex flex-col justify-center items-center p-4 md:p-8">
+                        <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center">Elevate Your Digital Footprint: Grow Your Online Presence!</h1>
+                        <p className="text-base md:text-xl text-center mb-6">Still waiting for a Brand Building, Website & Digital marketing agency for your Business? Call Now!! And get the best website development & Digital Marketing & Video Production services for your business.</p>
                         <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-lg">Let's Talk</button>
                     </div>
                 </div>
