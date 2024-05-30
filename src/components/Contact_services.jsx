@@ -42,13 +42,13 @@ const Contact_services = () => {
                 <div className="relative z-1 grid gap-5 lg:grid-cols-2">
                     <div className="relative min-h-[39rem] border border-gray-800 rounded-3xl overflow-hidden shadow-xl bg-gray-900">
                         <div className="absolute inset-0 p-8 bg-gradient-to-br from-purple-950 to-grey-800purple-950 bg-opacity-60 backdrop-filter backdrop-blur-lg rounded-3xl">
-                            <form className="space-y-10 flex flex-col" onSubmit={handleSubmit}>
-                                <div className="mb-4">
+                            <form className="space-y-5 flex flex-col" onSubmit={handleSubmit}>
+                                <div className="contactFormPage">
                                     <label className="block text-white text-sm font-bold mb-2" htmlFor="name">
                                         Name
                                     </label>
                                     <input
-                                        className={`shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.name ? 'border-red-500' : 'border-gray-700'}`}
+                                        className={`shadow appearance-none border rounded-lg w-full bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.name ? 'border-red-500' : 'border-gray-700'}`}
                                         id="name"
                                         type="text"
                                         placeholder="Name"
@@ -57,12 +57,12 @@ const Contact_services = () => {
                                     />
                                     {errors.name && <p className="text-red-500 text-xs italic">{errors.name}</p>}
                                 </div>
-                                <div className="mb-4">
+                                <div className="contactFormPage">
                                     <label className="block text-white text-sm font-bold mb-2" htmlFor="phone">
                                         Ph. Number
                                     </label>
                                     <input
-                                        className={`shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.phone ? 'border-red-500' : 'border-gray-700'}`}
+                                        className={`shadow appearance-none border rounded-lg w-full  bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.phone ? 'border-red-500' : 'border-gray-700'}`}
                                         id="phone"
                                         type="text"
                                         placeholder="Ph. Number"
@@ -71,12 +71,12 @@ const Contact_services = () => {
                                     />
                                     {errors.phone && <p className="text-red-500 text-xs italic">{errors.phone}</p>}
                                 </div>
-                                <div className="mb-4">
+                                <div className="contactFormPage">
                                     <label className="block text-white text-sm font-bold mb-2" htmlFor="mail">
                                         E-Mail
                                     </label>
                                     <input
-                                        className={`shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.mail ? 'border-red-500' : 'border-gray-700'}`}
+                                        className={`shadow appearance-none border rounded-lg w-full  bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.mail ? 'border-red-500' : 'border-gray-700'}`}
                                         id="mail"
                                         type="email"
                                         placeholder="Mail"
@@ -85,12 +85,12 @@ const Contact_services = () => {
                                     />
                                     {errors.mail && <p className="text-red-500 text-xs italic">{errors.mail}</p>}
                                 </div>
-                                <div className="mb-4">
+                                <div className="contactFormPage">
                                     <label className="block text-white text-sm font-bold mb-2" htmlFor="services">
                                         Select Service
                                     </label>
                                     <select
-                                        className={`shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.services ? 'border-red-500' : 'border-gray-700'}`}
+                                        className={`shadow appearance-none border rounded-lg w-full  bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.services ? 'border-red-500' : 'border-gray-700'}`}
                                         id="services"
                                         value={formData.services}
                                         onChange={handleChange}
@@ -104,7 +104,7 @@ const Contact_services = () => {
                                     </select>
                                     {errors.services && <p className="text-red-500 text-xs italic">{errors.services}</p>}
                                 </div>
-                                <div className="mb-4">
+                                <div className="contactFormPage">
                                     <label className="block text-white text-sm font-bold mb-2 text-start" htmlFor="comment">
                                         Leave a comment here
                                     </label>
