@@ -34,7 +34,7 @@ const Portfolio_cards = () => {
               onClick={() => handleCardClick(item)}
             >
               <div className="relative z-2 flex flex-col min-h-[20rem] p-[2.4rem]">
-                <div className="overflow-y-auto h-60 rounded-lg maincardcheck">
+                <div className="overflow-y-auto h-60 rounded-lg maincardcheck ">
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
