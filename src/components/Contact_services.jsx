@@ -160,8 +160,8 @@ const Contact_services = () => {
 
                 <div className="relative h-[30rem] bg-gray-900 rounded-xl overflow-hidden mb-4 p-6 text-white font-sans opacity-70 mt-10 bg-gradient-to-br from-purple-950 to-grey-800">
                     <div className="absolute inset-0 flex flex-col justify-center items-center p-8">
-                        <h1 className="text-4xl font-bold mb-4 text-center">Elevate Your Digital Footprint: Grow Your Online Presence!</h1>
-                        <p className="text-xl text-center mb-6">Still waiting for a Brand Building, Website & Digital marketing agency for your Business? Call Now!! And get the best website development & Digital Marketing & Video Production services for your business.</p>
+                        <h1 className="text-3xl font-bold mb-3 text-center">Elevate Your Digital Footprint: Grow Your Online Presence!</h1>
+                        <p className="text-xl text-center mb-4">Still waiting for a Brand Building, Website & Digital marketing agency for your Business? Call Now!! And get the best website development & Digital Marketing & Video Production services for your business.</p>
                         <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-lg">Let's Talk</button>
                     </div>
                 </div>
