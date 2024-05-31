@@ -41,14 +41,14 @@ const Benefits_services = () => {
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
               >
-                <div className="absolute inset-4 opacity-0 transition-opacity hover:opacity-10">
+                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-20 flex justify-center items-center overflow-hidden">
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
                       width={300}
-                      height={280}
+                      height={200}
                       alt={item.title}
-                      className="ml-5 object-cover"
+                      className="w-96 h-full ml-2 mr-2 mt-5 mb-5 "
                     />
                   )}
                 </div>
