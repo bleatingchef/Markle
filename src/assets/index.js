@@ -81,6 +81,24 @@ import wm from "./benefits/wm.png"
 import erp from "./benefits/erp.png"
 import scm from "./benefits/scm.png"
 
+import anish from "./emp/anish.jpg"
+import heera from "./emp/heera.jpg"
+import hitesh from "./emp/hitesh.jpg"
+import neha from "./emp/neha.jpg"
+import pooja from "./emp/pooja.jpg"
+import raja from "./emp/raja.jpg"
+import ravi from "./emp/ravi.jpg"
+import riya from "./emp/riya.jpg"
+import shivam from "./emp/shivam.jpg"
+import vikas from "./emp/vikas.jpg"
+import vipin from "./emp/vipin.jpg"
+// import rahul from "./emp/rahul.jpg"
+import aarushi from "./emp/aarushi.jpeg"
+import himanshu from "./emp/himanshu.jpeg"
+import durgesh from "./emp/durgesh.jpeg"
+import chetan from "./emp/chetan.jpeg"
+
+
 
  import mobapp from "./benefits/mobapp.png"
  import cpapp from "./benefits/cpapp.png"
@@ -213,4 +231,20 @@ export {
   dm,
   cpapp,
   map,
+  anish,
+  heera,
+  hitesh,
+  neha,
+  pooja,
+  raja,
+  ravi,
+  riya,
+  shivam,
+  vikas,
+  vipin,
+  // rahul,
+  aarushi,
+  himanshu,
+  durgesh,
+  chetan,
 };
