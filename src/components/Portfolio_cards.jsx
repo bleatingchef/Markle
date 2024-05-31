@@ -1,4 +1,4 @@
-
+import React, { useState } from 'react';
 import { benefits } from "../constants";
 import { portfolio_cards } from "../constants";
 import Heading from "./Heading";
@@ -8,8 +8,19 @@ import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import { curve } from "../assets";
 import { BackgroundCircles } from "./design/Hero";
+import Modal from './Modal';
 
 const Portfolio_cards = () => {
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const handleCardClick = (item) => {
+    setSelectedItem(item);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedItem(null);
+  };
+
   return (
     <Section id="features">
       <div className="container relative z-2">
@@ -17,9 +28,10 @@ const Portfolio_cards = () => {
         <div className="flex flex-wrap gap-10 mb-10">
           {portfolio_cards.map((item) => (
             <div
-              className="block relative bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+              className="block relative bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] cursor-pointer"
               style={{ backgroundImage: `url(${item.backgroundUrl})` }}
               key={item.id}
+              onClick={() => handleCardClick(item)}
             >
               <div className="relative z-2 flex flex-col min-h-[20rem] p-[2.4rem]">
                 <div className="overflow-y-auto h-60 rounded-lg maincardcheck ">
@@ -42,9 +54,8 @@ const Portfolio_cards = () => {
           ))}
         </div>
         <BackgroundCircles/>
-        
       </div>
-    
+      {selectedItem && <Modal item={selectedItem} onClose={handleCloseModal} />}
     </Section>
   );
 };
