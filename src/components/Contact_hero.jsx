@@ -8,6 +8,7 @@ import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
+import StarsCanvas from "./StarsCanvas";
 
 const Contact_hero = () => {
   const parallaxRef = useRef(null);
@@ -52,7 +53,7 @@ const Contact_hero = () => {
             /> */}
           </div>
 
-          <BackgroundCircles />
+          <StarsCanvas />
         </div>
 
       </div>

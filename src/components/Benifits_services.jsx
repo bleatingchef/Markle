@@ -6,6 +6,7 @@ import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import { curve } from "../assets";
 import { BackgroundCircles } from "./design/Hero";
+import StarsCanvas from "./StarsCanvas";
 
 const Benefits_services = () => {
   return (
@@ -16,7 +17,7 @@ const Benefits_services = () => {
           title="Services By"  
           text="Our services include simplest solutions powered by technology to help our clients. We provide a complete digital transformation service including a variety of web, app and software-based solutions to transform the way businesses work in all industries. We undertake complete design and development of applications to automate your business. Our products are deployed in companies across various industries to help them scale faster with security."
         />
-        <BackgroundCircles/>
+        <StarsCanvas/>
 
 
         <div className="flex flex-wrap gap-10 mb-10">

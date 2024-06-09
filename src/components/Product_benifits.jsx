@@ -6,6 +6,7 @@ import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import { curve } from "../assets";
 import { BackgroundCircles } from "./design/Hero";
+import StarsCanvas from "./StarsCanvas";
 
 const Product_Benefits = () => {
   return (
@@ -16,7 +17,7 @@ const Product_Benefits = () => {
           title="Products By"  
           text={"Markle Tech And media offers customized software development for application that results in business transformation. Our product-based solutions help organization achieve in improved productivity, flexibility and cost reduction. Our products are technology driven and helps companies succeed with business objective. Our customer relationship management software helps in maintaining active relationship between company with its customers."}
         />
-        <BackgroundCircles/>
+        <StarsCanvas/>
         
         
 

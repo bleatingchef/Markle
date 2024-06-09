@@ -8,6 +8,7 @@ import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
+import StarsCanvas from "./StarsCanvas";
 
 const About_hero = () => {
   const parallaxRef = useRef(null);
@@ -21,7 +22,7 @@ const About_hero = () => {
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
-      <BackgroundCircles />
+      <StarsCanvas />
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
             About {` `}
