@@ -9,6 +9,7 @@ import ClipPath from "../assets/svg/ClipPath";
 import { curve } from "../assets";
 import { BackgroundCircles } from "./design/Hero";
 import Modal from './Modal';
+import StarsCanvas from './StarsCanvas';
 
 const Portfolio_cards = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -53,7 +54,7 @@ const Portfolio_cards = () => {
             </div>
           ))}
         </div>
-        <BackgroundCircles/>
+        <StarsCanvas/>
       </div>
       {selectedItem && <Modal item={selectedItem} onClose={handleCloseModal} />}
     </Section>

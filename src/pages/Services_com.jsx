@@ -12,7 +12,7 @@ const Services_com = () => {
       <Benefits_services/>
 
       <Services_data />
-      <Footer />
+      <Footer/>
     </div>
   );
 };
