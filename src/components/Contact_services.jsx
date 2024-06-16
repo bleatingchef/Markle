@@ -3,16 +3,19 @@ import Section from "./Section";
 import { map } from "../assets";
 import { brainwaveServices } from "../constants";
 import { Gradient } from "./design/Services";
+import axios from 'axios';
 
 const Contact_services = () => {
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
-        mail: '',
+        email: '',
         services: '',
         comment: ''
     });
     const [errors, setErrors] = useState({});
+    const [successMessage, setSuccessMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -22,17 +25,51 @@ const Contact_services = () => {
         let tempErrors = {};
         tempErrors.name = formData.name ? "" : "Name is required.";
         tempErrors.phone = formData.phone ? "" : "Phone number is required.";
-        tempErrors.mail = formData.mail ? "" : "Email is required.";
+        tempErrors.email = formData.email ? "" : "Email is required.";
         tempErrors.services = formData.services ? "" : "Service selection is required.";
         tempErrors.comment = formData.comment.length <= 200 ? "" : "Comment must be 200 words or less.";
         setErrors(tempErrors);
         return Object.values(tempErrors).every(x => x === "");
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (validate()) {
-            console.log(formData);
+            try {
+                const response = await axios.post('/api', formData, {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                console.log("response ---------------->", response);
+                if (response.status >= 200 && response.status < 300) {
+                    setSuccessMessage('✅ Form submitted successfully');
+                    setErrorMessage('');
+                    setFormData({
+                        name: '',
+                        phone: '',
+                        email: '',
+                        services: '',
+                        comment: ''
+                    });
+                } else {
+                    setErrorMessage('Error submitting form');
+                    setSuccessMessage('');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                if (error.response) {
+                    console.error('Response data:', error.response.data);
+                    console.error('Response status:', error.response.status);
+                    console.error('Response headers:', error.response.headers);
+                } else if (error.request) {
+                    console.error('Request data:', error.request);
+                } else {
+                    console.error('Error message:', error.message);
+                }
+                setErrorMessage('Error submitting form');
+                setSuccessMessage('');
+            }
         }
     };
 
@@ -41,7 +78,7 @@ const Contact_services = () => {
             <div className="container mx-auto p-6">
                 <div className="relative z-1 grid gap-5 lg:grid-cols-2">
                     <div className="relative min-h-[39rem] border border-gray-800 rounded-3xl overflow-hidden shadow-xl bg-gray-900">
-                        <div className="absolute inset-0 p-8 bg-gradient-to-br from-purple-950 to-grey-800purple-950 bg-opacity-60 backdrop-filter backdrop-blur-lg rounded-3xl">
+                        <div className="absolute inset-0 p-8 bg-gradient-to-br from-purple-950 to-grey-800 bg-opacity-60 backdrop-filter backdrop-blur-lg rounded-3xl">
                             <form className="space-y-5 flex flex-col" onSubmit={handleSubmit}>
                                 <div className="contactFormPage">
                                     <label className="block text-white text-sm font-bold mb-2" htmlFor="name">
@@ -72,18 +109,18 @@ const Contact_services = () => {
                                     {errors.phone && <p className="text-red-500 text-xs italic">{errors.phone}</p>}
                                 </div>
                                 <div className="contactFormPage">
-                                    <label className="block text-white text-sm font-bold mb-2" htmlFor="mail">
+                                    <label className="block text-white text-sm font-bold mb-2" htmlFor="email">
                                         E-Mail
                                     </label>
                                     <input
-                                        className={`shadow appearance-none border rounded-lg w-full  bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.mail ? 'border-red-500' : 'border-gray-700'}`}
-                                        id="mail"
+                                        className={`shadow appearance-none border rounded-lg w-full  bg-gray-800 bg-opacity-70 text-white leading-tight focus:outline-none focus:shadow-outline ${errors.email ? 'border-red-500' : 'border-gray-700'}`}
+                                        id="email"
                                         type="email"
-                                        placeholder="Mail"
-                                        value={formData.mail}
+                                        placeholder="Email"
+                                        value={formData.email}
                                         onChange={handleChange}
                                     />
-                                    {errors.mail && <p className="text-red-500 text-xs italic">{errors.mail}</p>}
+                                    {errors.email && <p className="text-red-500 text-xs italic">{errors.email}</p>}
                                 </div>
                                 <div className="contactFormPage">
                                     <label className="block text-white text-sm font-bold mb-2" htmlFor="services">
@@ -126,6 +163,10 @@ const Contact_services = () => {
                                         Submit
                                     </button>
                                 </div>
+                                <div className="flex justify-center mt-4">
+                    {successMessage && <p className="text-green-500 text-lg font-bold">{successMessage}</p>}
+                    {errorMessage && <p className="text-red-500 text-lg font-bold">{errorMessage}</p>}
+                </div>
                             </form>
                         </div>
                     </div>
@@ -162,11 +203,15 @@ const Contact_services = () => {
                     <div className="absolute inset-0 flex flex-col justify-center items-center p-8">
                         <h1 className="text-3xl font-bold mb-3 text-center">Elevate Your Digital Footprint: Grow Your Online Presence!</h1>
                         <p className="text-xl text-center mb-4">Still waiting for a Brand Building, Website & Digital marketing agency for your Business? Call Now!! And get the best website development & Digital Marketing & Video Production services for your business.</p>
-                        <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-lg">Let's Talk</button>
+                        <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                        >
+                            Call Now
+                        </button>
                     </div>
                 </div>
 
                 <Gradient />
+                
             </div>
         </Section>
     );
