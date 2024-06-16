@@ -1,7 +1,4 @@
 {
-
-"proxy": "https://markle.vercel.app/",
-
   "name": "Markle",
   "private": true,
   "version": "0.0.0",
