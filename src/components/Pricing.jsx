@@ -3,6 +3,7 @@ import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import PricingList from "./PricingList";
 import { LeftLine, RightLine } from "./design/Pricing";
+import StarsCanvas from "./StarsCanvas";
 
 const Pricing = () => {
   return (
@@ -13,6 +14,7 @@ const Pricing = () => {
           tag="Pay Once, Use Forever"
           title="Flexible Plans with"
         />
+        <StarsCanvas />
 
         <div className="relative">
           <PricingList />
