@@ -70,7 +70,6 @@ import {
   smm,
   dm,
   cpapp,
-  anish,
   heera,
   hitesh,
   neha,
@@ -522,16 +521,9 @@ export const emp = [
     iconUrl: benefitIcon3,
     imageUrl: vipin,
   },
+
   {
     id: "11",
-    title: "Anish",
-    text: "Sr. Web Developer",
-    backgroundUrl: benefitCard6,
-    iconUrl: benefitIcon1,
-    imageUrl: anish,
-  },
-  {
-    id: "12",
     title: "Himanshu",
     text: "Web Developer",
     backgroundUrl: benefitCard1,
@@ -539,7 +531,7 @@ export const emp = [
     imageUrl: himanshu,
   },
   {
-    id: "13",
+    id: "12",
     title: "Durgesh",
     text: "Web Developer",
     backgroundUrl: benefitCard2,
@@ -547,7 +539,7 @@ export const emp = [
     imageUrl: durgesh,
   },
   {
-    id: "14",
+    id: "13",
     title: "Chetan",
     text: "Web Developer",
     backgroundUrl: benefitCard3,

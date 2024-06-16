@@ -81,7 +81,6 @@ import wm from "./benefits/wm.png"
 import erp from "./benefits/erp.png"
 import scm from "./benefits/scm.png"
 
-import anish from "./emp/anish.jpg"
 import heera from "./emp/heera.jpg"
 import hitesh from "./emp/hitesh.jpg"
 import neha from "./emp/neha.jpg"
@@ -231,7 +230,6 @@ export {
   dm,
   cpapp,
   map,
-  anish,
   heera,
   hitesh,
   neha,
