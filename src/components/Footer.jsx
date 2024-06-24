@@ -41,24 +41,34 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-3 text-base">CONTACT US</h3>
             <ul className="space-y-1 text-sm text-slate-400">
+            <li>
+                <a href="" className="hover:text-color-1">
+                 India (IN) <br /> A-52, Uttam Nagar East, New Delhi-110059
+                </a>
+              </li>
               <li>
                 <a href="mailto:info@markletechandmedia.com" className="hover:text-color-1">
                   info@markletechandmedia.com
                 </a>
               </li>
               <li>
-                <a href="mailto:markletechandmedia@gmail.com" className="hover:text-color-1">
-                  markletechandmedia@gmail.com
-                </a>
-              </li>
-              <li>
                 <a href="tel:+917982332070" className="hover:text-color-1">
-                  +91-798-233-2070
+                  +91-798-233-2070 <br /><br />
                 </a>
               </li>
               <li>
-                <a href="tel:+917678102159" className="hover:text-color-1">
-                  +91-767-810-2159
+                <a href="" className="hover:text-color-1">
+                  United States (USA) <br />42389, Barbary ST, Fremont, CA 94539, USA
+                </a>
+              </li>
+              <li>
+                <a href="contact@markletech.com" className="hover:text-color-1">
+                  contact@markletech.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+16282774060" className="hover:text-color-1">
+                  +1-628-277-4060
                 </a>
               </li>
               <li className="flex gap-3 mt-3">
@@ -80,6 +90,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          
         </div>
         <p className="caption text-n-4 text-sm">
           Copyright © {new Date().getFullYear()} - Markle Tech & Media Pvt. Ltd.
