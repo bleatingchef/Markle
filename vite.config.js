@@ -8,7 +8,7 @@ export default defineConfig({
     historyApiFallback: true,
     proxy: {
       '/api': {
-        target: 'https://script.google.com/macros/s/AKfycbywHwHJbOXHuN75OASGTmsh83AHOyGMMzhWYRu7tm7tRNcuulMkIwn3azXQ1XBcEXBMbA/exec',
+        target: 'https://script.google.com/macros/s/AKfycbyIGLCQzcZClXGv1V8mWgIMt3qmta-k_Ex-axGDER904M3RRcdhm2k4CrneLhtJwS9uFQ/exec',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },

@@ -121,18 +121,18 @@ export const navigation = [
     title: "Portfolio",
     url: "/portfolio",
   },
+  // {
+  //   id: "4",
+  //   title: "Packages",
+  //   url: "/packages",
+  // },
   {
     id: "4",
-    title: "Packages",
-    url: "/packages",
-  },
-  {
-    id: "5",
     title: "About Us",
     url: "/about",
   },
   {
-    id: "6",
+    id: "5",
     title: "Contact Us",
     url: "/contact",
   },
