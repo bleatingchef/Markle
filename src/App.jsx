@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/product" element={<Product_com />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio_com />} />
-          <Route path="/packages" element={<Package_com />} />
+          {/* <Route path="/packages" element={<Package_com />} /> */}
           <Route path="/contact" element={<Contact_com />} />
         </Routes>
       </ScrollToTop>
