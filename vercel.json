@@ -1,8 +1,14 @@
+
 {
- 
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://script.google.com/macros/s/AKfycbywHwHJbOXHuN75OASGTmsh83AHOyGMMzhWYRu7tm7tRNcuulMkIwn3azXQ1XBcEXBMbA/exec"
+    }
+  ],
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/(?!api/.*)",
       "destination": "/index.html",
       "permanent": true
     }
